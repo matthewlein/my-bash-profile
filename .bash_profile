@@ -12,10 +12,13 @@ WHITE="\[\e[0;37m\]"  BOLD_WHITE="\[\e[1;37m\]"  UNDER_WHITE="\[\e[4;37m\]"
 DEFAULT_COLOR="\[\e[0m\]"
 
 # terminal prompt colors
-PS1="${PURPLE}\t ${CYAN}\u: ${BOLD_YELLOW}\w/${DEFAULT_COLOR} $ "
+PS1="${PURPLE}\t ${BOLD_CYAN}\u@${CYAN}\h: ${BOLD_YELLOW}\w/${DEFAULT_COLOR} $ "
 
 # set to use usr/local/bin for brew and others
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+
+export CLICOLOR=1
+export LSCOLORS=Gxfxcxdxbxegedabagacad
 
 # color code filetypes
 alias ls='ls -G'
@@ -29,7 +32,7 @@ alias killsql="killall -9 mysqld"
 # clear dns
 alias flushdns="dscacheutil -flushcache"
 # restart local and mamp apaches
-alias restartapache="/Applications/MAMP/bin/stopApache.sh; sudo /usr/sbin/apachectl restart -k; sleep 3; /Applications/MAMP/bin/startApache.sh;"
+alias restartapache="/Applications/MAMP/bin/stopApache.sh; sudo /usr/sbin/apachectl restart; sleep 3; /Applications/MAMP/bin/startApache.sh;"
 
 ##
 # Drupals
