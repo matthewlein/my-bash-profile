@@ -38,5 +38,3 @@ alias restartapache="/Applications/MAMP/bin/stopApache.sh; sudo /usr/sbin/apache
 # Drupals
 ##
 alias drush="/usr/lib/drush/drush"
-
-alias aetrunk="cd /Applications/MAMP/htdocs/AE/code/trunk/docroot/sites/americanselect.local"
